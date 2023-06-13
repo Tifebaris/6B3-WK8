@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a DOM</title>
+</head>
+<body>
+   <section>
+
+   </section> 
+</body>
+<script>
+    const section = document.querySelector('section')
+ 
+    const heading = document.createElement('h2')
+   
+    heading.setAttribute('class', 'head1')
+
+
+   
+    heading.innerText = 'This is append element'
+
+    const image = document.createElement('img')
+    image.setAttribute('src', './images/people.jpg')
+    image.setAttribute('alt', 'people')
+    section.append(image)
+
+    section.append(heading)
+
+    document.body.style.background='blue'
+    document.body.style.color='white'
+</script>
+</html>
